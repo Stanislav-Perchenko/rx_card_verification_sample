@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RxCardVerificationSample</string>
+
+    <string name="field_card_number">Card number</string>
+    <string name="field_expires">Expires (MM/YY)</string>
+    <string name="field_cvc">CVC</string>
+
+    <string name="action_submit">Submit</string>
+    <string name="action_clear">Clear</string>
+</resources>

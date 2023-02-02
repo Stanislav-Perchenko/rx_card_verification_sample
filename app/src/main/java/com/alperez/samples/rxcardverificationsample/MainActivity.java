@@ -69,8 +69,6 @@ public class MainActivity extends AppCompatActivity {
                 cvcObservable.map(s -> !s.isEmpty())
             );
 
-
-
         final Observable<Boolean> isExpirationValidObservable = expiresObservable.map(DomainUtils::validateExpirationDate);
 
         final Observable<CardType> cardTypeObservable = cardNumObservable.map(CardType::fromString);

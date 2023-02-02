@@ -8,7 +8,6 @@
     android:paddingLeft="64dp"
     android:paddingRight="64dp"
     tools:context=".MainActivity">
-
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -34,7 +33,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp">
+        android:layout_marginTop="@dimen/margin_large" >
         <LinearLayout
             android:layout_width="108dp"
             android:layout_height="wrap_content"
@@ -80,7 +79,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="24dp">
+        android:layout_marginTop="@dimen/margin_large">
         <Button android:id="@+id/btn_submit"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -98,5 +97,4 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4"/>
-
 </LinearLayout>

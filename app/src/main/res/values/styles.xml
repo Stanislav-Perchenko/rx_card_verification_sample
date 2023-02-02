@@ -10,5 +10,12 @@
         <item name="android:textSize">14sp</item>
     </style>
 
+    <style name="CheckmarkOk">
+        <item name="android:layout_width">@dimen/checkmark_size</item>
+        <item name="android:layout_height">@dimen/checkmark_size</item>
+        <item name="android:src">@drawable/ic_checkmark_ok</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
 
 </resources>

@@ -17,10 +17,20 @@
     <TextView
         style="@style/Text.Title"
         android:text="@string/field_card_number"/>
-    <EditText android:id="@+id/edt_card_number"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textNoSuggestions"/>
+        android:layout_height="wrap_content">
+        <EditText android:id="@+id/edt_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions"
+            tools:ignore="TextFields" />
+        <ImageView android:id="@+id/checkmark_card_number_ok"
+            style="@style/CheckmarkOk"
+            android:layout_gravity="right|center_vertical"
+            tools:ignore="RtlHardcoded" />
+    </FrameLayout>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,10 +43,17 @@
             <TextView
                 style="@style/Text.Title"
                 android:text="@string/field_expires"/>
-            <EditText android:id="@+id/edt_expires"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textNoSuggestions"/>
+                android:layout_height="wrap_content">
+                <EditText android:id="@+id/edt_expires"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textNoSuggestions"/>
+                <ImageView android:id="@+id/checkmark_expires_ok"
+                    style="@style/CheckmarkOk"
+                    android:layout_gravity="right|center_vertical"/>
+            </FrameLayout>
         </LinearLayout>
         <LinearLayout
             android:layout_width="92dp"
@@ -46,10 +63,17 @@
             <TextView
                 style="@style/Text.Title"
                 android:text="@string/field_cvc"/>
-            <EditText android:id="@+id/edt_cvc"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textNoSuggestions"/>
+                android:layout_height="wrap_content">
+                <EditText android:id="@+id/edt_cvc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textNoSuggestions"/>
+                <ImageView android:id="@+id/checkmark_cvc_ok"
+                    style="@style/CheckmarkOk"
+                    android:layout_gravity="right|center_vertical"/>
+            </FrameLayout>
         </LinearLayout>
     </FrameLayout>
     <LinearLayout
